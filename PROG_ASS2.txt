@@ -1,0 +1,114 @@
+﻿/*
+AUTHOR: Yvonne Santiago
+DATE: July 27, 2018
+NAME: General Equation of a circle
+DESCRIPTION: This program calculates the radius and center of a circle.
+ARGUMENTS:
+RETURNS:
+NOTES:
+CHANGE HISTORY:
+*/
+
+
+#include <cmath>
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+//Title of the program
+cout << "GENERAL EQUATION OF A CIRCLE" << endl;
+
+
+	float x;
+
+	
+
+	float y;
+
+	float c;
+
+		
+
+	float A;
+
+	float B;
+
+	float C;
+
+	float D;
+
+	float E;
+
+	float F;
+
+	float L;
+
+	float G;
+
+	
+
+	
+
+	
+// Prompt the user to give the value of x, y, and c
+	cout << " Enter x:";
+
+	cin >> x;
+
+	
+
+	cout << " Enter y:";
+
+	cin >> y;
+
+	cout << " Enter c:";
+
+	cin >> c;
+
+	
+	A = (x*x);
+
+	B = (y*y);
+
+	C = (A/4);
+
+	D = (B/4);
+
+	E = (x/2);
+
+	F = (y/2);
+
+	G = sqrt(-c+(C+D));
+
+	
+
+	
+
+
+//To get the value  of L, add -c to the sum of C and D
+	L = (-c+(C+D));
+
+	
+
+	
+//to get the value of C and D, divide x by 2 and then square it
+	cout << " \n x^2"<< " (+) " << x << "x "<< " (+) " << C << " + " << "y^2" << " (+) " << y <<"y "<< " (+) " << D << " = " << -c << " (+) " << C << " (+) "<< D <<"\n";
+//Factor out using completing the square to get the value of E and F. The value of L is the sum of c, C and D
+	cout << " (x" << " (+) " << E << " )^2"  <<" + " << "(y" << " (+) " << F << " )^2"  << " = " << L << "\n\n";
+
+	
+//The value of E and F will be the center of the circle
+	cout << " Center : " << "(" << -E << "," << -F <<") \n";
+
+//The value of G will be the radius
+	cout << " Raduis : " << G;
+
+return 0;
+
+
+}
