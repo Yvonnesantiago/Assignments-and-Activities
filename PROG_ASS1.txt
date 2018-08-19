@@ -1,0 +1,59 @@
+﻿// sample program
+#include <iostream>
+#include<stdio.h>
+#include<conio.h>
+using namespace std;
+
+int main(){
+string first;
+string last;
+char middle;
+int age;
+float height;
+float weight;
+float bmi;
+
+cout << ("Enter your First name:");
+cin >> first;
+cout << ("Enter your Last name:");
+cin >> last;
+cout << ("Enter your Middle Initial:");
+cin >> middle;
+cout << ("Enter your Age:");
+cin >> age;
+cout << ("Enter your Height (meters):");
+cin >> height;
+cout << ("Enter your Weight (kilograms):");
+cin >> weight;
+
+cout << "\nFull name: " << first << " " << middle  << " " << last << ";\n";
+cout << "Age:" << age;
+
+bmi = weight / (height*height);
+
+if (bmi <=17 ){
+cout << " Your body mass index is " << bmi << "\n and you are UNDERWEIGHT.";
+}
+else if (bmi >=18.5 ){
+cout << " Your body mass index is " << bmi << "\n and you are NORMAL."; 
+}
+else if (bmi >=25 ){
+cout << " Your body mass index is " << bmi << "\n and you are OVERWEIGHT."; 
+}
+
+float x;
+bmi=x;
+	bool isthepersonnormal (float x);
+	{
+		if (x>=18.5) 
+		{ 
+			printf("\n\nTRUE");
+		} 
+		else 
+		{ 
+			printf("\n\nFALSE"); 
+		} 
+	}
+
+return 0;
+}
