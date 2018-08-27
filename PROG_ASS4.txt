@@ -1,0 +1,61 @@
+﻿/*
+Author: Yvonne B. Santiago
+Program: Work Problem
+Description: This program determines the age
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Initialize the variables
+	int b;
+	float a,c;
+	double  d , e , f , g;
+	string again="yes";
+	
+	while (again=="yes"||again=="Yes"||again=="YES")
+	{
+	//title of the program
+	    cout << " Work Problem" << "\n" << endl;
+		
+	// problem to be program
+		cout <<" At present, John's age is 30 % of his father's age. ";
+		cout << "20 years from now, John's age is 58% of his age.";
+		cout <<"How old are they now and 20 years from now?  " <<"\n\n" << endl;
+		cout << "Note: Percentage must be in decimal " <<"\n\n"<< endl;
+		
+	//Prompt the user to enter input
+		cout << "Enter John's age percentage of his father's age: ";
+		cin >> a;
+		cout <<"\n\n";
+        cout << "Enter the number that will add on their age: ";
+        cin >> b;
+        cout <<"\n\n";
+        cout << "Enter John's age percentage of his age: ";
+        cin >> c;
+        cout <<"\n\n";
+        
+	//formulas that is to use
+        //let d be be the age of father now
+        d=(b-b*c)/(c-a);
+        e= a * d ;
+        f= a*d + 20;
+        g= d+20;
+        
+        
+        
+	    
+	//the output of the program 
+		cout <<"John's father is " << d <<" now. " << endl;
+		
+        cout << "John's age is " << e <<" now."<< endl;
+        cout << "John is " << f <<" twenty years from now. " << endl;
+        cout << "John's fathes is " << g <<" twenty years from now." << endl;
+        
+	//loop to try it again
+	     cout << "\n\n Do you want to try it again? (yes/no):";
+	     cin  >> again;
+	     cout << "\n\n";
+    }
+ return 0;
+}
